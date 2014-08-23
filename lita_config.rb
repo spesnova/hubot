@@ -19,7 +19,7 @@ Lita.configure do |config|
   # Log Level
   #   :debug, :info, :warn, :error, :fatal
   #
-  config.robot.log_level = :info
+  config.robot.log_level = :debug
 
   # An array of user IDs that are considered administrators. These users
   # the ability to add and remove other users from authorization groups.
