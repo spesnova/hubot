@@ -10,8 +10,10 @@ Lita.configure do |config|
   config.robot.mention_name = "hubot"
   config.robot.alias        = nil
 
-  # The locale code for the language to use.
-  # config.robot.locale = :en
+  #
+  # Locale
+  #
+  config.robot.locale = :ja
 
   # The severity of messages to log. Options are:
   # :debug, :info, :warn, :error, :fatal
