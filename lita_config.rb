@@ -26,13 +26,15 @@ Lita.configure do |config|
   # What is considered a user ID will change depending on which adapter you use.
   # config.robot.admins = ["1", "2"]
 
-  # The adapter you want to connect with. Make sure you've added the
-  # appropriate gem to the Gemfile.
-  config.robot.adapter = :shell
-
-  ## Example: Set options for the chosen adapter.
-  # config.adapter.username = "myname"
-  # config.adapter.password = "secret"
+  #
+  # Adapter
+  #   Shell Adapter Configuration
+  #config.robot.adapter = :shell
+  #   Slack Adapter Configuration
+  config.robot.adapter          = :slack
+  config.adapter.incoming_token = ENV["LITA_SLACK_INCOMING_TOKEN"]
+  config.adapter.team_domain    = ENV["LITA_SLACK_TEAM_DOMAIN"]
+  config.adapter.username       = "hubot"
 
   #
   # Redis Connection
@@ -40,7 +42,9 @@ Lita.configure do |config|
   config.redis.host = ENV["LITA_REDIS_HOST"]
   config.redis.port = ENV["LITA_REDIS_PORT"]
 
-  ## Example: Set configuration for any loaded handlers. See the handler's
-  ## documentation for options.
-  # config.handlers.some_handler.some_config_key = "value"
+  #
+  # Handler
+  #   Slack Handler
+  config.handlers.slack_handler.webhook_token = ENV["LITA_SLACK_OUTGOING_TOKEN"]
+  config.handlers.slack_handler.team_domain   = ENV["LITA_SLACK_TEAM_DOMAIN"]
 end
