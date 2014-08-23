@@ -38,6 +38,7 @@ Lita.configure do |config|
   #   Slack Adapter Configuration
   config.robot.adapter          = :slack
   config.adapter.incoming_token = ENV["LITA_SLACK_INCOMING_TOKEN"]
+  config.adapter.incoming_url   = ENV["LITA_SLACK_INCOMING_URL"]
   config.adapter.team_domain    = ENV["LITA_SLACK_TEAM_DOMAIN"]
   config.adapter.username       = "hubot"
 
