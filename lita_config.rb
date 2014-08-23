@@ -7,7 +7,7 @@ Lita.configure do |config|
   # Naming
   #
   config.robot.name         = "hubot"
-  config.robot.mention_name = "hubot"
+  config.robot.mention_name = "@hubot"
   config.robot.alias        = nil
 
   #
