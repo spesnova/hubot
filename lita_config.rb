@@ -46,7 +46,7 @@ Lita.configure do |config|
   #
   #config.redis.host = ENV["LITA_REDIS_HOST"]
   #config.redis.port = ENV["LITA_REDIS_PORT"]
-  config.redis.rul   = ENV["LITA_REDIS_URL"]
+  config.redis.url   = ENV["LITA_REDIS_URL"]
 
   #
   # Handler
