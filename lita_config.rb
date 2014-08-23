@@ -15,9 +15,10 @@ Lita.configure do |config|
   #
   config.robot.locale = :ja
 
-  # The severity of messages to log. Options are:
-  # :debug, :info, :warn, :error, :fatal
-  # Messages at the selected level and above will be logged.
+  #
+  # Log Level
+  #   :debug, :info, :warn, :error, :fatal
+  #
   config.robot.log_level = :info
 
   # An array of user IDs that are considered administrators. These users
