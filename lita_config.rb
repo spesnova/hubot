@@ -27,6 +27,11 @@ Lita.configure do |config|
   # config.robot.admins = ["1", "2"]
 
   #
+  # Http router
+  #
+  config.http.port = ENV["PORT"] || 8080
+
+  #
   # Adapter
   #   Shell Adapter Configuration
   #config.robot.adapter = :shell
