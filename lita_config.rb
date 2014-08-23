@@ -3,8 +3,12 @@ require "dotenv"
 Dotenv.load
 
 Lita.configure do |config|
-  # The name your robot will use.
-  config.robot.name = "Lita"
+  #
+  # Naming
+  #
+  config.robot.name         = "hubot"
+  config.robot.mention_name = "hubot"
+  config.robot.alias        = nil
 
   # The locale code for the language to use.
   # config.robot.locale = :en
