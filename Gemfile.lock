@@ -46,6 +46,9 @@ GEM
       lita (>= 3.0)
     lita-dice (0.0.1)
       lita (>= 2.7)
+    lita-dig (0.6.0)
+      lita (>= 3.1)
+      net-dns
     lita-keyword-arguments (0.0.1)
       lita (>= 3.2)
       slop (>= 3.5)
@@ -57,6 +60,7 @@ GEM
     method_source (0.8.2)
     multi_json (1.10.1)
     multipart-post (2.0.0)
+    net-dns (0.8.0)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -83,6 +87,7 @@ DEPENDENCIES
   lita-coin
   lita-datadog
   lita-dice
+  lita-dig
   lita-slack
   lita-slack-handler
   pry
