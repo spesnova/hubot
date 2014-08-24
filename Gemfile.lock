@@ -49,6 +49,8 @@ GEM
     lita-dig (0.6.0)
       lita (>= 3.1)
       net-dns
+    lita-giphy (1.0.2)
+      lita (>= 2.0)
     lita-google (0.1.0)
       lita (>= 2.6)
     lita-google-images (1.0.5)
@@ -92,6 +94,7 @@ DEPENDENCIES
   lita-datadog
   lita-dice
   lita-dig
+  lita-giphy
   lita-google
   lita-google-images
   lita-slack
