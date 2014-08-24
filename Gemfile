@@ -14,6 +14,7 @@ gem "lita-datadog"
 gem "lita-dig"
 gem "lita-google"
 gem "lita-google-images"
+gem "lita-giphy"
 
 # Others
 gem "dotenv"
