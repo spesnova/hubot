@@ -13,6 +13,7 @@ gem "lita-dice"
 gem "lita-datadog"
 gem "lita-dig"
 gem "lita-google"
+gem "lita-google-images"
 
 # Others
 gem "dotenv"
