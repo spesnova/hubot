@@ -55,4 +55,7 @@ Lita.configure do |config|
   config.handlers.slack_handler.webhook_token    = ENV["LITA_SLACK_OUTGOING_TOKEN"]
   config.handlers.slack_handler.team_domain      = ENV["LITA_SLACK_TEAM_DOMAIN"]
   config.handlers.slack_handler.ignore_user_name = ENV["LITA_SLACK_IGNORE_USERNAME"]
+  #   Datadog
+  config.handlers.datadog.api_key         = ENV["LITA_DATADOG_API_KEY"]
+  config.handlers.datadog.application_key = ENV["LITA_DATADOG_APPLICATION_KEY"]
 end
