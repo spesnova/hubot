@@ -33,14 +33,15 @@ Lita.configure do |config|
 
   #
   # Adapter
-  #   Shell Adapter Configuration
-  config.robot.adapter = :shell
-  #   Slack Adapter Configuration
-  #config.robot.adapter          = :slack
-  #config.adapter.incoming_token = ENV["LITA_SLACK_INCOMING_TOKEN"]
-  #config.adapter.incoming_url   = ENV["LITA_SLACK_INCOMING_URL"]
-  #config.adapter.team_domain    = ENV["LITA_SLACK_TEAM_DOMAIN"]
-  #config.adapter.username       = "hubot"
+  if ENV["LITA_ADAPTER"] == "slack"
+    config.robot.adapter          = :slack
+    config.adapter.incoming_token = ENV["LITA_SLACK_INCOMING_TOKEN"]
+    config.adapter.incoming_url   = ENV["LITA_SLACK_INCOMING_URL"]
+    config.adapter.team_domain    = ENV["LITA_SLACK_TEAM_DOMAIN"]
+    config.adapter.username       = "hubot"
+  else
+    config.robot.adapter = :shell
+  end
 
   #
   # Redis Connection
