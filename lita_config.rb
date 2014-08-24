@@ -58,4 +58,6 @@ Lita.configure do |config|
   #   Datadog
   config.handlers.datadog.api_key         = ENV["LITA_DATADOG_API_KEY"]
   config.handlers.datadog.application_key = ENV["LITA_DATADOG_APPLICATION_KEY"]
+  #   Giphy
+  config.handlers.giphy.api_key           = ENV["LITA_GIPHY_API_KEY"]
 end
