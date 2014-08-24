@@ -8,7 +8,7 @@ $ git clone https://github.com/spesnova/hubot.git && cd hubot
 $ script/bootstrap
 ```
 
-## CONFIGURE THE BOT
+## CONFIGURATIONS
 Every configuration is set via environment variables.
 
 Using `.env`.
