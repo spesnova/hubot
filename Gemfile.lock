@@ -49,6 +49,8 @@ GEM
     lita-dig (0.6.0)
       lita (>= 3.1)
       net-dns
+    lita-google (0.1.0)
+      lita (>= 2.6)
     lita-keyword-arguments (0.0.1)
       lita (>= 3.2)
       slop (>= 3.5)
@@ -88,6 +90,7 @@ DEPENDENCIES
   lita-datadog
   lita-dice
   lita-dig
+  lita-google
   lita-slack
   lita-slack-handler
   pry
