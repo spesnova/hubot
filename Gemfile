@@ -12,6 +12,7 @@ gem "lita-coin"
 gem "lita-dice"
 gem "lita-datadog"
 gem "lita-dig"
+gem "lita-google"
 
 # Others
 gem "dotenv"
