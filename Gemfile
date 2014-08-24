@@ -8,3 +8,4 @@ gem "lita-slack-handler"
 
 # Others
 gem "dotenv"
+gem "pry"
