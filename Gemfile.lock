@@ -51,6 +51,8 @@ GEM
       net-dns
     lita-google (0.1.0)
       lita (>= 2.6)
+    lita-google-images (1.0.5)
+      lita (>= 2.0)
     lita-keyword-arguments (0.0.1)
       lita (>= 3.2)
       slop (>= 3.5)
@@ -91,6 +93,7 @@ DEPENDENCIES
   lita-dice
   lita-dig
   lita-google
+  lita-google-images
   lita-slack
   lita-slack-handler
   pry
