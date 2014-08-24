@@ -44,6 +44,8 @@ GEM
       chronic
       dogapi
       lita (>= 3.0)
+    lita-dice (0.0.1)
+      lita (>= 2.7)
     lita-keyword-arguments (0.0.1)
       lita (>= 3.2)
       slop (>= 3.5)
@@ -80,6 +82,7 @@ DEPENDENCIES
   lita-ascii-art!
   lita-coin
   lita-datadog
+  lita-dice
   lita-slack
   lita-slack-handler
   pry
