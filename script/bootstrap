@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+set -e
+
+# Welcome Message
+echo ""
+cat <<_EOT_
+    __          __          __
+   / /_  __  __/ /_  ____  / /_
+  / __ \/ / / / __ \/ __ \/ __/
+ / / / / /_/ / /_/ / /_/ / /_
+/_/ /_/\__,_/_.___/\____/\__/
+_EOT_
+echo ""
+
+# Install gems
+bundle install -j4
+
+# Copy .env if missing
+test -f .env || cp .env.sample .env
+
+echo "We're ready."
+exit 0
